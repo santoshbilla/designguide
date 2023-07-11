@@ -1,0 +1,110 @@
+button {
+    border: 0;
+    padding: 0.5rem 1.5rem;
+    margin-right: 1rem;
+    border-radius: 3px;
+    border: 2px solid;
+}
+
+.osse-button {
+    color: #fff;
+    background-color: #bc2444;
+    border-color: #bc2444;
+    &.osse-button--hover {
+        background-color: #921c35;
+        border-color: #921c35;
+    }
+    &:disabled {
+        background-color: #c4c6c8;
+        color: #262626;
+        border-color: #c4c6c8;
+    }
+
+    &.osse-button--outline {
+        color: #bc2444;
+        background-color: transparent;
+        border-color: #bc2444;
+        font-weight: 500;
+        &:hover {
+            color: #fff;
+            background-color: #bc2444;
+            border-color: #bc2444;
+        }
+    }
+}
+
+.bg-base-darkest {
+    .osse-button {
+        &.osse-button--outline {
+            color: #f7d4dc;
+            background-color: transparent;
+            border-color: #f7d4dc;
+            font-weight: 500;
+            &.osse-button--hover,
+            &:hover {
+                color: #00384d;
+                background-color: #f7d4dc;
+                border-color: #f7d4dc;
+            }
+        }
+    }
+}
+
+.osse-button--secondary {
+    color: #fff;
+    background-color: #006085;
+    border-color: #006085;
+    &.osse-button--hover {
+        background-color: #00384d;
+        border-color: #00384d;
+    }
+    &:disabled {
+        background-color: #bdecff;
+        color: #595959;
+        border-color: #d9d9d9;
+    }
+}
+
+.osse-button--accent-cool {
+    color: #fff;
+    background-color: #16a258;
+    border-color: #16a258;
+    &.osse-button--hover {
+        background-color: #0a4827;
+        border-color: #0a4827;
+    }
+    &:disabled {
+        background-color: #bdecff;
+        color: #595959;
+        border-color: #d9d9d9;
+    }
+}
+
+.osse-button--accent-warm {
+    color: #fff;
+    background-color: #c05600;
+    border-color: #c05600;
+    &.osse-button--hover {
+        background-color: #994400;
+        border-color: #994400;
+    }
+    &:disabled {
+        background-color: #bdecff;
+        color: #595959;
+        border-color: #d9d9d9;
+    }
+}
+
+.osse-button--medium {
+    height: 3.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.osse-button--large {
+    height: 5.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    font-size: 2rem;
+}

@@ -1,0 +1,269 @@
+<div id="content" class="">
+    <h2>Primary Colors</h2>
+    <div class="styleguide__colours row">
+        <div class="col-md-3 col-sm-4 col-6">
+            <h3>OSSE Blues</h3>
+            <table class="c-table-view">
+                <thead>
+                    <tr>
+                        <th>Swatch</th>
+                        <th>Name</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let color of osseBlues">
+                        <td><div class="swatch" [style.backgroundColor]="color.code"></div></td>
+                        <td>
+                            {{ color.name }}
+                            <div *ngIf="color.code === '#006085'" class="highlight">(OSSE Blue)</div>
+                        </td>
+                        <td>{{ color.code }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6">
+            <h3>OSSE Greys</h3>
+            <table class="c-table-view">
+                <thead>
+                    <tr>
+                        <th>Swatch</th>
+                        <th>Name</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let color of osseGreys">
+                        <td><div class="swatch" [style.backgroundColor]="color.code"></div></td>
+                        <td>
+                            {{ color.name }}
+                            <div *ngIf="color.code === '#c4c6c8'" class="highlight">(OSSE Grey)</div>
+                        </td>
+                        <td>{{ color.code }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6">
+            <h3>OSSE Reds</h3>
+            <table class="c-table-view">
+                <thead>
+                    <tr>
+                        <th>Swatch</th>
+                        <th>Name</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let color of osseReds">
+                        <td><div class="swatch" [style.backgroundColor]="color.code"></div></td>
+                        <td>
+                            {{ color.name }}
+                            <div *ngIf="color.code === '#bc2444'" class="highlight">(OSSE Red)</div>
+                        </td>
+                        <td>{{ color.code }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <h2>Background Colors</h2>
+    <div class="styleguide__colours">
+        <table class="c-table-view">
+            <thead>
+                <tr>
+                    <th>Background Color</th>
+                    <th>Name</th>
+                    <th>Value</th>
+                    <th>UI class</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let color of backgroundColors">
+                    <td><div class="bg-swatch swatch" [style.backgroundColor]="color.code"></div></td>
+                    <td>
+                        {{ color.name }}
+                    </td>
+                    <td>{{ color.code }}</td>
+                    <td>
+                        <code>.{{ color.name }}</code>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2>Grayscale: Color Palette</h2>
+    <div class="row styleguide__colours">
+        <div class="col-md-3 col-sm-4 col-6">
+            <div class="colour-card">
+                <div class="colour-box copy--h2 is-light js-colour-box style-OC8QE" style="background-color: #fafafa" id="style-OC8QE">
+                    <div class="colour-box__hash">#fafafa</div>
+                </div>
+                <code>.font-color-</code>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6">
+            <div class="colour-card">
+                <div class="colour-box copy--h2 is-light js-colour-box style-xgOo7" style="background-color: #e8e8e8" id="style-xgOo7">
+                    <div class="colour-box__hash">#e8e8e8</div>
+                </div>
+                <code>.font-color-</code>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6">
+            <div class="colour-card">
+                <div class="colour-box copy--h2 is-light js-colour-box style-l2T9U" style="background-color: #cccccc" id="style-l2T9U">
+                    <div class="colour-box__hash">#cccccc</div>
+                </div>
+                <code>.font-color-</code>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6">
+            <div class="colour-card">
+                <div class="colour-box copy--h2 is-light js-colour-box style-kqmdt" style="background-color: #666666" id="style-kqmdt">
+                    <div class="colour-box__hash">#666666</div>
+                </div>
+                <code>.font-color-</code>
+            </div>
+        </div>
+    </div>
+    <h2>Gradients</h2>
+    <div class="row styleguide__colours">
+        <div class="col-md-3 col-sm-4 col-6">
+            <div class="colour-card">
+                <div
+                    class="colour-box copy--h2 is-light js-colour-box bg-grayGradient style-w6gHL"
+                    data-clipboard-text=".bg-grayGradient"
+                    id="style-w6gHL"
+                >
+                    <div class="colour-box__hash">.bg-grayGradient</div>
+                </div>
+                <code>.bg-grayGradient</code>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6">
+            <div class="colour-card">
+                <div
+                    class="colour-box copy--h2 is-light js-colour-box bg-blueGradient style-T1Q4B"
+                    data-clipboard-text=".bg-blueGradient"
+                    id="style-T1Q4B"
+                >
+                    <div class="colour-box__hash">.bg-blueGradient</div>
+                </div>
+                <code>.bg-blueGradient</code>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6">
+            <div class="colour-card">
+                <div
+                    class="colour-box copy--h2 is-light js-colour-box bg-redGradient style-f9THo"
+                    data-clipboard-text=".bg-redGradient"
+                    id="style-f9THo"
+                >
+                    <div class="colour-box__hash">.bg-redGradient</div>
+                </div>
+                <code>.bg-redGradient</code>
+            </div>
+        </div>
+    </div>
+    <h2>Background Curves</h2>
+    <div class="row styleguide__colours">
+        <div class="col-sm-12 col-md-6">
+            <div class="colour-card">
+                <div class="bg-blue bg-curve-top colour-box copy--h2 is-light js-colour-box pt-0" data-clipboard-text=".bg-blue .bg-curve-top">
+                    <div class="colour-box__hash">.bg-blue .bg-curve-top</div>
+                </div>
+                <code>.bg-blue .bg-curve-top</code>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="colour-card">
+                <div class="bg-blue bg-curve-bottom colour-box copy--h2 is-light js-colour-box pb-0" data-clipboard-text=".bg-blue .bg-curve-top">
+                    <div class="colour-box__hash">.bg-blue .bg-curve-bottom</div>
+                </div>
+                <code>.bg-blue .bg-curve-bottom</code>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="colour-card">
+                <div class="bg-gray bg-curve-top colour-box copy--h2 is-light js-colour-box pt-0" data-clipboard-text=".bg-blue .bg-curve-top">
+                    <div class="colour-box__hash">.bg-blue .bg-curve-top</div>
+                </div>
+                <code>.bg-blue .bg-curve-top</code>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="colour-card">
+                <div class="bg-gray bg-curve-bottom colour-box copy--h2 is-light js-colour-box pb-0" data-clipboard-text=".bg-blue .bg-curve-top">
+                    <div class="colour-box__hash">.bg-gray .bg-curve-bottom</div>
+                </div>
+                <code>.bg-gray .bg-curve-bottom</code>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="colour-card">
+                <div class="bg-redGradient bg-curve-top colour-box copy--h2 is-light js-colour-box pt-0" data-clipboard-text=".bg-blue .bg-curve-top">
+                    <div class="colour-box__hash">.bg-redGradient .bg-curve-top</div>
+                </div>
+                <code>.bg-redGradient .bg-curve-top</code>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="colour-card">
+                <div
+                    class="bg-redGradient bg-curve-bottom colour-box copy--h2 is-light js-colour-box pb-0"
+                    data-clipboard-text=".bg-blue .bg-curve-top"
+                >
+                    <div class="colour-box__hash">.bg-redGradient .bg-curve-bottom</div>
+                </div>
+                <code>.bg-redGradient .bg-curve-bottom</code>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="colour-card">
+                <div class="bg-tan bg-curve-top colour-box copy--h2 is-light js-colour-box pt-0" data-clipboard-text=".bg-tan .bg-curve-top">
+                    <div class="colour-box__hash">.bg-tan .bg-curve-top</div>
+                </div>
+                <code>.bg-tan .bg-curve-top</code>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="colour-card">
+                <div class="bg-tan bg-curve-bottom colour-box copy--h2 is-light js-colour-box pb-0" data-clipboard-text=".bg-tan .bg-curve-top">
+                    <div class="colour-box__hash">.bg-tan .bg-curve-bottom</div>
+                </div>
+                <code>.bg-tan .bg-curve-bottom</code>
+            </div>
+        </div>
+    </div>
+
+    <h2>Typography Colors</h2>
+    <div class="row styleguide__colours">
+        <div class="col-md-3 col-sm-4 col-6">
+            <div class="colour-card">
+                <div class="colour-box copy--h2 is-light js-colour-box style-wPFCy" style="background-color: #404040" id="style-wPFCy">
+                    <div class="colour-box__hash">#404040</div>
+                </div>
+                <code>#404040</code>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6">
+            <div class="colour-card">
+                <div class="colour-box copy--h2 is-light js-colour-box style-sPHHo" style="background-color: #004966" id="style-sPHHo">
+                    <div class="colour-box__hash">#004966</div>
+                </div>
+                <code>#004966</code>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6">
+            <div class="colour-card">
+                <div class="colour-box copy--h2 is-light js-colour-box style-YzXxN" style="background-color: #ffffff" id="style-YzXxN">
+                    <div class="colour-box__hash">#FFFFFF</div>
+                </div>
+                <code>#FFFFFF</code>
+            </div>
+        </div>
+    </div>
+</div>

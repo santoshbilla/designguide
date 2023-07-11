@@ -1,0 +1,32 @@
+.swatch {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #dedede;
+    &.bg-swatch {
+        width: 100%;
+    }
+}
+
+.c-table-view {
+    width: 100%;
+    td {
+        &:nth-of-type(1) {
+            width: 20%;
+        }
+        &:nth-of-type(2) {
+            min-width: 135px;
+        }
+        &:nth-of-type(3) {
+            min-width: 88px;
+            text-transform: uppercase;
+        }
+    }
+
+    margin-bottom: 20px;
+}
+
+.highlight {
+    font-size: 12px;
+    color: #e83e8c;
+}

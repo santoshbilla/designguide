@@ -1,306 +1,65 @@
-<div id="content" class="">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <!-- <div class="container-fluid">
-            <button type="button" id="sidebarCollapse" class="btn btn-info">
-                <svg class="svg-inline--fa fa-align-left fa-w-14" aria-hidden="true" data-prefix="fas" data-icon="align-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
-                    <path fill="currentColor" d="M288 44v40c0 8.837-7.163 16-16 16H16c-8.837 0-16-7.163-16-16V44c0-8.837 7.163-16 16-16h256c8.837 0 16 7.163 16 16zM0 172v40c0 8.837 7.163 16 16 16h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16zm16 312h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm256-200H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16h256c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16z"></path>
-                </svg>
-                <span>Toggle Menu</span>
-            </button>
-        </div> -->
-    </nav>
-    <h2>Primary Colors</h2>
-    <div class="row styleguide__colours">
-        <div class="col-md-3 col-sm-4 col-6">
-            <div class="colour-card">
-                <div class="colour-box copy--h2 is-light js-colour-box style-mckcc" style="background-color: #006085" id="style-mckcc">
-                    
-                    
-                    <div class="colour-box__hash"> #006085</div>
-                </div>
-                <code>OSSE Blue</code>
-            </div>
+<!-- This is a reverse engineering of the "Hyperspace"
+     design from HTML5 Up! https://html5up.net/hyperspace -->
+
+<main class="main">
+    <aside class="sidebar">
+        <nav class="nav" id="menu">
+            <ul>
+                <li class="active"><a href="/colors">Colors</a></li>
+                <li><a href="/buttons">Buttons</a></li>
+                <li><a href="/typography">Typography</a></li>
+                <li><a href="/examples">Examples</a></li>
+                <li><a href="#">Get In Touch</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <section class="section-main">
+        <div class="container">
+            <router-outlet></router-outlet>
         </div>
-        <div class="col-md-3 col-sm-4 col-6">
-            <div class="colour-card">
-                <div class="colour-box copy--h2 is-light js-colour-box style-tff6D" style="background-color: #00729f" id="style-tff6D">
-                    
-                    
-                    <div class="colour-box__hash"> #00729f</div>
-                </div>
-                <code>.font-color-osse-blue (web alternative to OSSE Red)</code>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-4 col-6">
-            <div class="colour-card">
-                <div class="colour-box copy--h2 is-light js-colour-box style-sIGOo" style="background-color: #005776" id="style-sIGOo">
-                    
-                    
-                    <div class="colour-box__hash"> #005776</div>
-                </div>
-                <code>.font-color-blue</code>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-4 col-6">
-            <div class="colour-card">
-                <div class="colour-box copy--h2 is-light js-colour-box style-stSAP" style="background-color: #ffffff" id="style-stSAP">
-                    <div class="colour-box__hash"> #ffffff</div>
-                </div>
-                <code>.font-color-white</code>
-            </div>
-        </div>
-    </div>
-    <h2>Background Colors</h2>
-    <div class="row styleguide__colours">
-        <div class="col-md-3 col-sm-4 col-6">
-            <div class="colour-card">
-                <div class="colour-box copy--h2 is-light js-colour-box style-Fncrk" style="background-color: #005776" id="style-Fncrk">
-                    <div class="colour-box__hash"> #005776</div>
-                </div>
-                <code>.bg-blue</code>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-4 col-6">
-            <div class="colour-card">
-                <div class="colour-box copy--h2 is-light js-colour-box style-EDqBW" style="background-color: #e4f0f4" id="style-EDqBW">
-                    
-                    
-                    <div class="colour-box__hash"> #e4f0f4</div>
-                </div>
-                <code>.bg-blue-light</code>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-4 col-6">
-            <div class="colour-card">
-                <div class="colour-box copy--h2 is-light js-colour-box style-WtkXL" style="background-color: #F7F7F7" id="style-WtkXL">
-                    <div class="colour-box__hash"> #F7F7F7</div>
-                </div>
-                <code>.bg-gray</code>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-4 col-6">
-            <div class="colour-card">
-                <div class="colour-box copy--h2 is-light js-colour-box style-jHONI" style="background-color: #fafafa" id="style-jHONI">
-                    <div class="colour-box__hash"> #fafafa</div>
-                </div>
-                <code>.bg-gray-light</code>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-4 col-6">
-            <div class="colour-card">
-                <div class="colour-box copy--h2 is-light js-colour-box style-7A8d2" style="background-color: #cccccc" id="style-7A8d2">
-                    <div class="colour-box__hash"> #cccccc</div>
-                </div>
-                <code>.bg-lightgray</code>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-4 col-6">
-            <div class="colour-card">
-                <div class="colour-box copy--h2 is-light js-colour-box style-pNfGR" style="background-color: #f6f2ea" id="style-pNfGR">
-                    <div class="colour-box__hash"> #f6f2ea</div>
-                </div>
-                <code>.bg-tan</code>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-4 col-6">
-            <div class="colour-card">
-                <div class="colour-box copy--h2 is-light js-colour-box style-Id48a" style="background-color: #ffffff" id="style-Id48a">
-                    
-                    
-                    <div class="colour-box__hash"> #ffffff</div>
-                </div>
-                <code>.bg-white</code>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-4 col-6">
-            <div class="colour-card">
-                <div class="colour-box copy--h2 is-light js-colour-box style-rvVAz" style="background-color: #93c94e" id="style-rvVAz">
-                    <div class="colour-box__hash"> #93c94e</div>
-                </div>
-                <code>.button-lightgreen</code>
-            </div>
-        </div>
-    </div>
-    <p>Note: Green should only be used on the web for sales buttons.</p>
-    <h2>Grayscale: Color Palette</h2>
-    <div class="row styleguide__colours">
-        <div class="col-md-3 col-sm-4 col-6">
-            <div class="colour-card">
-                <div class="colour-box copy--h2 is-light js-colour-box style-OC8QE" style="background-color: #fafafa" id="style-OC8QE">
-                    <div class="colour-box__hash"> #fafafa</div>
-                </div>
-                <code>.font-color-</code>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-4 col-6">
-            <div class="colour-card">
-                <div class="colour-box copy--h2 is-light js-colour-box style-xgOo7" style="background-color: #e8e8e8" id="style-xgOo7">
-                    <div class="colour-box__hash"> #e8e8e8</div>
-                </div>
-                <code>.font-color-</code>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-4 col-6">
-            <div class="colour-card">
-                <div class="colour-box copy--h2 is-light js-colour-box style-l2T9U" style="background-color: #cccccc" id="style-l2T9U">
-                    <div class="colour-box__hash"> #cccccc</div>
-                </div>
-                <code>.font-color-</code>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-4 col-6">
-            <div class="colour-card">
-                <div class="colour-box copy--h2 is-light js-colour-box style-kqmdt" style="background-color: #666666" id="style-kqmdt">
-                    <div class="colour-box__hash"> #666666</div>
-                </div>
-                <code>.font-color-</code>
-            </div>
-        </div>
-    </div>
-    <h2>Gradients</h2>
-    <div class="row styleguide__colours">
-        <div class="col-md-3 col-sm-4 col-6">
-            <div class="colour-card">
-                <div class="colour-box copy--h2 is-light js-colour-box bg-grayGradient style-w6gHL" data-clipboard-text=".bg-grayGradient" id="style-w6gHL">
-                    <div class="colour-box__hash"> .bg-grayGradient</div>
-                </div>
-                <code>.bg-grayGradient</code>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-4 col-6">
-            <div class="colour-card">
-                <div class="colour-box copy--h2 is-light js-colour-box bg-orangeGradient style-T1Q4B" data-clipboard-text=".bg-orangeGradient" id="style-T1Q4B">
-                    <div class="colour-box__hash"> .bg-orangeGradient</div>
-                </div>
-                <code>.bg-orangeGradient</code>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-4 col-6">
-            <div class="colour-card">
-                <div class="colour-box copy--h2 is-light js-colour-box bg-yellowGradient style-f9THo" data-clipboard-text=".bg-yellowGradient" id="style-f9THo">
-                    <div class="colour-box__hash"> .bg-yellowGradient</div>
-                </div>
-                <code>.bg-yellowGradient</code>
-            </div>
-        </div>
-    </div>
-    <h2>Background Curves</h2>
-    <div class="row styleguide__colours">
-        <div class="col-sm-12 col-md-6">
-            <div class="colour-card">
-                <div class="bg-blue bg-curve-top colour-box copy--h2 is-light js-colour-box pt-0" data-clipboard-text=".bg-blue .bg-curve-top">
-                    <div class="colour-box__hash"> .bg-blue .bg-curve-top</div>
-                </div>
-                <code>.bg-blue .bg-curve-top</code>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-6">
-            <div class="colour-card">
-                <div class="bg-blue bg-curve-bottom colour-box copy--h2 is-light js-colour-box pb-0" data-clipboard-text=".bg-blue .bg-curve-top">
-                    <div class="colour-box__hash"> .bg-blue .bg-curve-bottom</div>
-                </div>
-                <code>.bg-blue .bg-curve-bottom</code>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-6">
-            <div class="colour-card">
-                <div class="bg-gray bg-curve-top colour-box copy--h2 is-light js-colour-box pt-0" data-clipboard-text=".bg-blue .bg-curve-top">
-                    <div class="colour-box__hash"> .bg-blue .bg-curve-top</div>
-                </div>
-                <code>.bg-blue .bg-curve-top</code>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-6">
-            <div class="colour-card">
-                <div class="bg-gray bg-curve-bottom colour-box copy--h2 is-light js-colour-box pb-0" data-clipboard-text=".bg-blue .bg-curve-top">
-                    <div class="colour-box__hash"> .bg-gray .bg-curve-bottom</div>
-                </div>
-                <code>.bg-gray .bg-curve-bottom</code>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-6">
-            <div class="colour-card">
-                <div class="bg-yellowGradient bg-curve-top colour-box copy--h2 is-light js-colour-box pt-0" data-clipboard-text=".bg-blue .bg-curve-top">
-                    <div class="colour-box__hash"> .bg-yellowGradient .bg-curve-top</div>
-                </div>
-                <code>.bg-yellowGradient .bg-curve-top</code>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-6">
-            <div class="colour-card">
-                <div class="bg-yellowGradient bg-curve-bottom colour-box copy--h2 is-light js-colour-box pb-0" data-clipboard-text=".bg-blue .bg-curve-top">
-                    <div class="colour-box__hash"> .bg-yellowGradient .bg-curve-bottom</div>
-                </div>
-                <code>.bg-yellowGradient .bg-curve-bottom</code>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-6">
-            <div class="colour-card">
-                <div class="bg-tan bg-curve-top colour-box copy--h2 is-light js-colour-box pt-0" data-clipboard-text=".bg-tan .bg-curve-top">
-                    <div class="colour-box__hash"> .bg-tan .bg-curve-top</div>
-                </div>
-                <code>.bg-tan .bg-curve-top</code>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-6">
-            <div class="colour-card">
-                <div class="bg-tan bg-curve-bottom colour-box copy--h2 is-light js-colour-box pb-0" data-clipboard-text=".bg-tan .bg-curve-top">
-                    
-                    
-                    <div class="colour-box__hash"> .bg-tan .bg-curve-bottom</div>
-                </div>
-                <code>.bg-tan .bg-curve-bottom</code>
-            </div>
-        </div>
-    </div>
+    </section>
+</main>
+
+<!-- 
     <h2>Secondary Dark and Light Variants Colors</h2>
     <div class="row styleguide__colours">
         <div class="col-md-3 col-sm-4 col-6">
             <div class="colour-card">
-                <div class="colour-box copy--h2 is-light js-colour-box style-7zkJ5" style="background-color: #9B3000" id="style-7zkJ5">
-                    
-                    
-                    <div class="colour-box__hash"> #9B3000</div>
+                <div class="colour-box copy--h2 is-light js-colour-box style-7zkJ5" style="background-color: #9b3000" id="style-7zkJ5">
+                    <div class="colour-box__hash">#9B3000</div>
                 </div>
                 <code>#9B3000</code>
             </div>
         </div>
         <div class="col-md-3 col-sm-4 col-6">
             <div class="colour-card">
-                <div class="colour-box copy--h2 is-light js-colour-box style-xQNQr" style="background-color: #C63E00" id="style-xQNQr">
-                    
-                    
-                    <div class="colour-box__hash"> #C63E00</div>
+                <div class="colour-box copy--h2 is-light js-colour-box style-xQNQr" style="background-color: #c63e00" id="style-xQNQr">
+                    <div class="colour-box__hash">#C63E00</div>
                 </div>
                 <code>#C63E00</code>
             </div>
         </div>
         <div class="col-md-3 col-sm-4 col-6">
             <div class="colour-card">
-                <div class="colour-box copy--h2 is-light js-colour-box style-5C5KT" style="background-color: #FF7739" id="style-5C5KT">
-                    
-                    
-                    <div class="colour-box__hash"> #FF7739</div>
+                <div class="colour-box copy--h2 is-light js-colour-box style-5C5KT" style="background-color: #ff7739" id="style-5C5KT">
+                    <div class="colour-box__hash">#FF7739</div>
                 </div>
                 <code>#FF7739</code>
             </div>
         </div>
         <div class="col-md-3 col-sm-4 col-6">
             <div class="colour-card">
-                <div class="colour-box copy--h2 is-light js-colour-box style-6YohP" style="background-color: #FF9464" id="style-6YohP">
-                    
-                    
-                    <div class="colour-box__hash"> #FF9464</div>
+                <div class="colour-box copy--h2 is-light js-colour-box style-6YohP" style="background-color: #ff9464" id="style-6YohP">
+                    <div class="colour-box__hash">#FF9464</div>
                 </div>
                 <code>#FF9464</code>
             </div>
         </div>
         <div class="col-md-3 col-sm-4 col-6">
             <div class="colour-card">
-                <div class="colour-box copy--h2 is-light js-colour-box style-f7pcC" style="background-color: #FBE1D5" id="style-f7pcC">
-                    
-                    
-                    <div class="colour-box__hash"> #FBE1D5</div>
+                <div class="colour-box copy--h2 is-light js-colour-box style-f7pcC" style="background-color: #fbe1d5" id="style-f7pcC">
+                    <div class="colour-box__hash">#FBE1D5</div>
                 </div>
                 <code>#FBE1D5</code>
             </div>
@@ -310,20 +69,16 @@
     <div class="row styleguide__colours">
         <div class="col-md-3 col-sm-4 col-6">
             <div class="colour-card">
-                <div class="colour-box copy--h2 is-light js-colour-box style-KEWOn" style="background-color: #002C3B" id="style-KEWOn">
-                    
-                    
-                    <div class="colour-box__hash"> #002C3B</div>
+                <div class="colour-box copy--h2 is-light js-colour-box style-KEWOn" style="background-color: #002c3b" id="style-KEWOn">
+                    <div class="colour-box__hash">#002C3B</div>
                 </div>
                 <code>#002C3B</code>
             </div>
         </div>
         <div class="col-md-3 col-sm-4 col-6">
             <div class="colour-card">
-                <div class="colour-box copy--h2 is-light js-colour-box style-GfDI7" style="background-color: #00445B" id="style-GfDI7">
-                    
-                    
-                    <div class="colour-box__hash"> #00445B</div>
+                <div class="colour-box copy--h2 is-light js-colour-box style-GfDI7" style="background-color: #00445b" id="style-GfDI7">
+                    <div class="colour-box__hash">#00445B</div>
                 </div>
                 <code>#00445B</code>
             </div>
@@ -331,75 +86,124 @@
         <div class="col-md-3 col-sm-4 col-6">
             <div class="colour-card">
                 <div class="colour-box copy--h2 is-light js-colour-box style-mMIHL" style="background-color: #005876" id="style-mMIHL">
-                    
-                    
-                    <div class="colour-box__hash"> #005876</div>
+                    <div class="colour-box__hash">#005876</div>
                 </div>
                 <code>#005876</code>
             </div>
         </div>
         <div class="col-md-3 col-sm-4 col-6">
             <div class="colour-card">
-                <div class="colour-box copy--h2 is-light js-colour-box style-VIcop" style="background-color: #006E92" id="style-VIcop">
-                    
-                    
-                    <div class="colour-box__hash"> #006E92</div>
+                <div class="colour-box copy--h2 is-light js-colour-box style-VIcop" style="background-color: #006e92" id="style-VIcop">
+                    <div class="colour-box__hash">#006E92</div>
                 </div>
                 <code>#006E92</code>
             </div>
         </div>
         <div class="col-md-3 col-sm-4 col-6">
             <div class="colour-card">
-                <div class="colour-box copy--h2 is-light js-colour-box style-dTDo3" style="background-color: #0096C8" id="style-dTDo3">
-                    
-                    
-                    <div class="colour-box__hash"> #0096C8</div>
+                <div class="colour-box copy--h2 is-light js-colour-box style-dTDo3" style="background-color: #0096c8" id="style-dTDo3">
+                    <div class="colour-box__hash">#0096C8</div>
                 </div>
                 <code>#0096C8</code>
             </div>
         </div>
         <div class="col-md-3 col-sm-4 col-6">
             <div class="colour-card">
-                <div class="colour-box copy--h2 is-light js-colour-box style-nNMoP" style="background-color: #FBFBFB" id="style-nNMoP">
-                    
-                    
-                    <div class="colour-box__hash"> #FBFBFB</div>
+                <div class="colour-box copy--h2 is-light js-colour-box style-nNMoP" style="background-color: #fbfbfb" id="style-nNMoP">
+                    <div class="colour-box__hash">#FBFBFB</div>
                 </div>
                 <code>#FBFBFB</code>
             </div>
         </div>
     </div>
-    <h2>Typography Colors</h2>
+
+    <div class="col-md-3 col-sm-4 col-6">
+    <div class="colour-card row">
+        <div class="colour-box copy--h2 is-light js-colour-box style-mckcc" style="background-color: #006085" id="style-mckcc">
+            <div class="colour-box__hash">#006085</div>
+        </div>
+        <div><code>OSSE Blue</code></div>
+    </div>
+</div>
+<div class="col-md-3 col-sm-4 col-6">
+    <div class="colour-card">
+        <div class="colour-box copy--h2 is-light js-colour-box style-tff6D" style="background-color: #00729f" id="style-tff6D">
+            <div class="colour-box__hash">#00729f</div>
+        </div>
+        <code>.font-color-osse-blue (web alternative to OSSE Red)</code>
+    </div>
+</div>
+<div class="col-md-3 col-sm-4 col-6">
+    <div class="colour-card">
+        <div class="colour-box copy--h2 is-light js-colour-box style-sIGOo" style="background-color: #005776" id="style-sIGOo">
+            <div class="colour-box__hash">#005776</div>
+        </div>
+        <code>.font-color-blue</code>
+    </div>
+</div>
+<div class="col-md-3 col-sm-4 col-6">
+    <div class="colour-card">
+        <div class="colour-box copy--h2 is-light js-colour-box style-stSAP" style="background-color: #ffffff" id="style-stSAP">
+            <div class="colour-box__hash">#ffffff</div>
+        </div>
+        <code>.font-color-white</code>
+    </div>
+</div> <h2>Background Colors</h2>
     <div class="row styleguide__colours">
         <div class="col-md-3 col-sm-4 col-6">
             <div class="colour-card">
-                <div class="colour-box copy--h2 is-light js-colour-box style-wPFCy" style="background-color: #38454A" id="style-wPFCy">
-                    
-                    
-                    <div class="colour-box__hash"> #38454A</div>
+                <div class="colour-box copy--h2 is-light js-colour-box style-Fncrk" style="background-color: #005776" id="style-Fncrk">
+                    <div class="colour-box__hash">#005776</div>
                 </div>
-                <code>#38454A</code>
+                <code>.bg-blue</code>
             </div>
         </div>
         <div class="col-md-3 col-sm-4 col-6">
             <div class="colour-card">
-                <div class="colour-box copy--h2 is-light js-colour-box style-sPHHo" style="background-color: #005876" id="style-sPHHo">
-                    
-                    
-                    <div class="colour-box__hash"> #005876</div>
+                <div class="colour-box copy--h2 is-light js-colour-box style-EDqBW" style="background-color: #e4f0f4" id="style-EDqBW">
+                    <div class="colour-box__hash">#e4f0f4</div>
                 </div>
-                <code>#005876</code>
+                <code>.bg-blue-light</code>
             </div>
         </div>
         <div class="col-md-3 col-sm-4 col-6">
             <div class="colour-card">
-                <div class="colour-box copy--h2 is-light js-colour-box style-YzXxN" style="background-color: #FFFFFF" id="style-YzXxN">
-                    
-                    
-                    <div class="colour-box__hash"> #FFFFFF</div>
+                <div class="colour-box copy--h2 is-light js-colour-box style-WtkXL" style="background-color: #f7f7f7" id="style-WtkXL">
+                    <div class="colour-box__hash">#F7F7F7</div>
                 </div>
-                <code>#FFFFFF</code>
+                <code>.bg-gray</code>
             </div>
         </div>
-    </div>
-</div>
+        <div class="col-md-3 col-sm-4 col-6">
+            <div class="colour-card">
+                <div class="colour-box copy--h2 is-light js-colour-box style-jHONI" style="background-color: #fafafa" id="style-jHONI">
+                    <div class="colour-box__hash">#fafafa</div>
+                </div>
+                <code>.bg-gray-light</code>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6">
+            <div class="colour-card">
+                <div class="colour-box copy--h2 is-light js-colour-box style-7A8d2" style="background-color: #cccccc" id="style-7A8d2">
+                    <div class="colour-box__hash">#cccccc</div>
+                </div>
+                <code>.bg-lightgray</code>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6">
+            <div class="colour-card">
+                <div class="colour-box copy--h2 is-light js-colour-box style-pNfGR" style="background-color: #faf8f4" id="style-pNfGR">
+                    <div class="colour-box__hash">#faf8f4</div>
+                </div>
+                <code>.bg-tan</code>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6">
+            <div class="colour-card">
+                <div class="colour-box copy--h2 is-light js-colour-box style-Id48a" style="background-color: #ffffff" id="style-Id48a">
+                    <div class="colour-box__hash">#ffffff</div>
+                </div>
+                <code>.bg-white</code>
+            </div>
+        </div>
+    </div>-->
