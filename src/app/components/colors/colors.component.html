@@ -2,7 +2,7 @@
     <h2>Primary Colors</h2>
     <div class="styleguide__colours row">
         <div class="col-md-3 col-sm-4 col-6">
-            <h3>OSSE Blues</h3>
+            <h3>OSE Blues</h3>
             <table class="c-table-view">
                 <thead>
                     <tr>
@@ -12,11 +12,11 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let color of osseBlues">
+                    <tr *ngFor="let color of oseBlues">
                         <td><div class="swatch" [style.backgroundColor]="color.code"></div></td>
                         <td>
                             {{ color.name }}
-                            <div *ngIf="color.code === '#006085'" class="highlight">(OSSE Blue)</div>
+                            <div *ngIf="color.code === '#006085'" class="highlight">(OSE Blue)</div>
                         </td>
                         <td>{{ color.code }}</td>
                     </tr>
@@ -24,7 +24,7 @@
             </table>
         </div>
         <div class="col-md-3 col-sm-4 col-6">
-            <h3>OSSE Greys</h3>
+            <h3>OSE Greys</h3>
             <table class="c-table-view">
                 <thead>
                     <tr>
@@ -34,11 +34,11 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let color of osseGreys">
+                    <tr *ngFor="let color of oseGreys">
                         <td><div class="swatch" [style.backgroundColor]="color.code"></div></td>
                         <td>
                             {{ color.name }}
-                            <div *ngIf="color.code === '#c4c6c8'" class="highlight">(OSSE Grey)</div>
+                            <div *ngIf="color.code === '#c4c6c8'" class="highlight">(OSE Grey)</div>
                         </td>
                         <td>{{ color.code }}</td>
                     </tr>
@@ -46,7 +46,7 @@
             </table>
         </div>
         <div class="col-md-3 col-sm-4 col-6">
-            <h3>OSSE Reds</h3>
+            <h3>OSE Reds</h3>
             <table class="c-table-view">
                 <thead>
                     <tr>
@@ -56,11 +56,11 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let color of osseReds">
+                    <tr *ngFor="let color of oseReds">
                         <td><div class="swatch" [style.backgroundColor]="color.code"></div></td>
                         <td>
                             {{ color.name }}
-                            <div *ngIf="color.code === '#bc2444'" class="highlight">(OSSE Red)</div>
+                            <div *ngIf="color.code === '#bc2444'" class="highlight">(OSE Red)</div>
                         </td>
                         <td>{{ color.code }}</td>
                     </tr>

@@ -6,11 +6,11 @@ button {
     border: 2px solid;
 }
 
-.osse-button {
+.ose-button {
     color: #fff;
     background-color: #bc2444;
     border-color: #bc2444;
-    &.osse-button--hover {
+    &.ose-button--hover {
         background-color: #921c35;
         border-color: #921c35;
     }
@@ -20,7 +20,7 @@ button {
         border-color: #c4c6c8;
     }
 
-    &.osse-button--outline {
+    &.ose-button--outline {
         color: #bc2444;
         background-color: transparent;
         border-color: #bc2444;
@@ -34,13 +34,13 @@ button {
 }
 
 .bg-base-darkest {
-    .osse-button {
-        &.osse-button--outline {
+    .ose-button {
+        &.ose-button--outline {
             color: #f7d4dc;
             background-color: transparent;
             border-color: #f7d4dc;
             font-weight: 500;
-            &.osse-button--hover,
+            &.ose-button--hover,
             &:hover {
                 color: #00384d;
                 background-color: #f7d4dc;
@@ -50,11 +50,11 @@ button {
     }
 }
 
-.osse-button--secondary {
+.ose-button--secondary {
     color: #fff;
     background-color: #006085;
     border-color: #006085;
-    &.osse-button--hover {
+    &.ose-button--hover {
         background-color: #00384d;
         border-color: #00384d;
     }
@@ -65,11 +65,11 @@ button {
     }
 }
 
-.osse-button--accent-cool {
+.ose-button--accent-cool {
     color: #fff;
     background-color: #16a258;
     border-color: #16a258;
-    &.osse-button--hover {
+    &.ose-button--hover {
         background-color: #0a4827;
         border-color: #0a4827;
     }
@@ -80,11 +80,11 @@ button {
     }
 }
 
-.osse-button--accent-warm {
+.ose-button--accent-warm {
     color: #fff;
     background-color: #c05600;
     border-color: #c05600;
-    &.osse-button--hover {
+    &.ose-button--hover {
         background-color: #994400;
         border-color: #994400;
     }
@@ -95,14 +95,14 @@ button {
     }
 }
 
-.osse-button--medium {
+.ose-button--medium {
     height: 3.5rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     font-size: 1.5rem;
 }
 
-.osse-button--large {
+.ose-button--large {
     height: 5.5rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;

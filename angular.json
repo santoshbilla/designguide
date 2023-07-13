@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "osse-design-system": {
+    "ose-design-system": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/osse-design-system",
+            "outputPath": "dist/ose-design-system",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "osse-design-system:build:production"
+              "browserTarget": "ose-design-system:build:production"
             },
             "development": {
-              "browserTarget": "osse-design-system:build:development"
+              "browserTarget": "ose-design-system:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "osse-design-system:build"
+            "browserTarget": "ose-design-system:build"
           }
         },
         "test": {
